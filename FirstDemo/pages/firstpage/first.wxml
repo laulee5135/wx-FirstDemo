@@ -1,1 +1,9 @@
-测试页面123456
+
+<view class='mainpage'>
+  <view class='listpage' wx:for="{{items}}" wx:for-index="index"  wx:for-item="item" 
+        bindtap="setPlain" data-sendval='{{index+11}}'>
+        {{index+11}}、{{item.title}}
+    
+  </view>
+
+</view>
